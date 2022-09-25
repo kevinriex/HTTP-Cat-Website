@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #21252b;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3em;
+}
+
+p {
+    font-size: 0.5em;
+}
+
+a {
+    color: inherit;
+}
+
+#center {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
