@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Cat Mockup</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div id="center" style="height: fit-content;">
+        <h1>Status:</h1>
+        <div id="outer">
+            {%for x in codes%}
+                <div class="inner"><a href="/{{x['code']}}"><img src="https://http.cat/{{x['code']}}"></a></div>
+            {%endfor%}
+        </div>
+        <p>This <a href="https://http.cat/">Project</a> was copied by <a href="https://kevinriexinger.de">Kevin
+                Riexinger.</a></p>
+
+</body>
+
+</html>

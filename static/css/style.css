@@ -24,3 +24,18 @@ a {
     justify-content: center;
     align-items: center;
 }
+#outer {
+    grid-template-columns: 25vw 25vw;
+    display: grid;
+    column-gap: 5vw;
+    row-gap: 5vw;
+    margin: 0 auto 0 auto;
+}
+.inner {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+}
+.inner > a > img {
+    max-width: 100%;
+}
